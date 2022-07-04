@@ -336,6 +336,22 @@ do
 			URL=${URL2}
 			break;
 			;;
+		"-a")
+			# 4chan-dl -a archive.alice.al e 2514318
+			# 0        1  2                3 4
+			BOARD=$3
+			THREAD=$4
+			URL="https://$2/${BOARD}/thread/${THREAD}"
+			break
+			;;
+		"--archive")
+			# 4chan-dl -a archive.alice.al e 2514318
+			# 0        1  2                3 4
+			BOARD=$3
+			THREAD=$4
+			URL="https://$2/${BOARD}/thread/${THREAD}"
+			break
+			;;
 		"bootstrap")
 			mkdir css
 			mkdir js
@@ -353,8 +369,8 @@ do
 			curl "https://s.4cdn.org/js/core.min.js" -o "js/core.min.js"
 			curl "https://s.4cdn.org/js/extension.min.js" -o "js/extension.min.js"
 
-			ln -sv "js/core.min.js" "js/core.js"
-			ln -sv "js/extension.min.js" "js/extension.js"
+			ln -sv "core.min.js" "js/core.js"
+			ln -sv "extension.min.js" "js/extension.js"
 			exit
 			;;
 		*)
