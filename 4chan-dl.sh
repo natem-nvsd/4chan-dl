@@ -339,14 +339,14 @@ do
 		"bootstrap")
 			mkdir css
 			mkdir js
-			curl "s.4cdn.org/image/favicon.ico" -o "favicon.ico"
+			curl "https://s.4cdn.org/image/favicon.ico" -o "favicon.ico"
 			curl "https://s.4cdn.org/css/yotsubanew.css"   -o "css/yotsubanew.css"
 			curl "https://s.4cdn.org/css/yotsubluenew.css" -o "css/yotsubluenew.css"
 			curl "https://s.4cdn.org/css/futabanew.css"    -o "css/futabanew.css"
 			curl "https://s.4cdn.org/css/burichannew.css"  -o "css/burichannew.css"
 			curl "https://s.4cdn.org/css/photon.css"       -o "css/photon.css"
 			curl "https://s.4cdn.org/css/tomorrow.css"     -o "css/tomorrow.css"
-			curl "https://s.4cdn.org/css/yotsubamobile.css"-o "css/yotsubamobile.css"
+			curl "https://s.4cdn.org/css/yotsubamobile.css" -o "css/yotsubamobile.css"
 			curl "https://s.4cdn.org/css/yui.css" -o "css/yui.css"
 			curl "https://s.4cdn.org/css/global.17.css" -o "css/global.js"
 			curl "https://s.4cdn.org/css/error.css" -o "css/error.css"
